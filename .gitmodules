@@ -1,0 +1,5 @@
+[submodule "sourcedata/raw"]
+	path = sourcedata/raw
+	url = typhon:/mnt/DATA/data/yoh/1076_spacetop
+	datalad-id = 2ee2bfa7-6c1b-4cf6-87e9-297e30f42517
+	datalad-url = typhon:/mnt/DATA/data/yoh/1076_spacetop
