@@ -1,0 +1,36 @@
+#!/bin/bash
+#SBATCH -J spacetop-fmriprep
+#SBATCH -o logs/%a.log
+#SBATCH -t 12:00:00
+#SBATCH -p normal
+#SBATCH -N 1 -n 1
+#SBATCH -A A2CPS
+
+PS4='+ $(date) '
+set -uex
+
+ROOT="${SLURM_SUBMIT_DIR}"
+IMAGE=code/containers/fmriprep_25_1_4.sif
+SOURCEDATA="${ROOT}"/sourcedata
+RAWDATA="${SOURCEDATA}"/raw
+
+if ((SLURM_ARRAY_TASK_ID > 116)); then
+    printf "The Slurm array ID is too high. There are only 117 participants [IDs: 0-116].\n" >&2
+    exit 1
+fi
+
+mapfile -t subs < <(find "${RAWDATA}" -mindepth 1 -maxdepth 1 -type d -name "sub-*" | sort | grep -oP "(?<=sub-)[0-9]+")
+participant_label="${subs[${SLURM_ARRAY_TASK_ID}]}"
+
+
+apptainer run \
+    --bind "${ROOT}" \
+    --env TEMPLATEFLOW_HOME="${SOURCEDATA}"/templateflow \
+    ${IMAGE} \
+    --fs-license "${ROOT}"/code/license \
+    --participant-label "${participant_label}" \
+    --skip-bids-validation \
+    --ignore slicetiming \
+    --dummy-scans 6 \
+    -w /tmp/work \
+    sourcedata/raw "${ROOT}" participant

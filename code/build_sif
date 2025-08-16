@@ -1,0 +1,4 @@
+#!/bin/bash
+
+apptainer build code/containers/fmriprep_25_1_4.sif docker://nipreps/fmriprep:25.1.4
+
