@@ -2,3 +2,5 @@
 
 apptainer build code/containers/fmriprep_25_1_4.sif docker://nipreps/fmriprep:25.1.4
 
+apptainer build code/containers/freesurfer_7_4_1.sif docker://freesurfer/freesurfer:7.4.1
+

@@ -1,0 +1,20 @@
+{
+  "AnatomicalReference": "sub-0011_ses-01_acq-mb8_run-01_fmapid-auto00001_desc-epi_fieldmap.nii.gz",
+  "AssociatedCoefficients": [
+    "sub-0011_ses-01_acq-mb8_run-01_fmapid-auto00001_desc-coeff_fieldmap.nii.gz"
+  ],
+  "B0FieldIdentifier": "auto_00001",
+  "IntendedFor": [
+    "ses-01/func/sub-0011_ses-01_task-social_acq-mb8_run-01_bold.nii.gz",
+    "ses-01/func/sub-0011_ses-01_task-social_acq-mb8_run-02_bold.nii.gz",
+    "ses-01/func/sub-0011_ses-01_task-social_acq-mb8_run-03_bold.nii.gz",
+    "ses-01/func/sub-0011_ses-01_task-social_acq-mb8_run-04_bold.nii.gz",
+    "ses-01/func/sub-0011_ses-01_task-social_acq-mb8_run-05_bold.nii.gz",
+    "ses-01/func/sub-0011_ses-01_task-social_acq-mb8_run-06_bold.nii.gz"
+  ],
+  "RawSources": [
+    "/scratch/08266/psadil/ds005256-fmriprep/sourcedata/raw/sub-0011/ses-01/fmap/sub-0011_ses-01_acq-mb8_dir-ap_run-01_epi.nii.gz",
+    "/scratch/08266/psadil/ds005256-fmriprep/sourcedata/raw/sub-0011/ses-01/fmap/sub-0011_ses-01_acq-mb8_dir-pa_run-01_epi.nii.gz"
+  ],
+  "Units": "Hz"
+}

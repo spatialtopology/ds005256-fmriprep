@@ -1,0 +1,16 @@
+#!/bin/bash
+
+SLURM_ARRAY_TASK_ID=$1
+
+PS4='+ $(date) '
+set -uex
+
+RAWDATA=/scratch/08266/psadil/ds005256-fmriprep/sourcedata/raw/
+
+mapfile -t subs < <(find "${RAWDATA}" -mindepth 1 -maxdepth 1 -type d -name "sub-*" | sort | grep -oP "(?<=sub-)[0-9]+")
+participant_label="${subs[${SLURM_ARRAY_TASK_ID}]}"
+
+git annex add sub-"${participant_label}"* sourcedata/freesurfer/sub-"${participant_label}" logs/"${SLURM_ARRAY_TASK_ID}".log &&
+	git commit -q -m "add sub-${participant_label}" &&
+	git gc
+

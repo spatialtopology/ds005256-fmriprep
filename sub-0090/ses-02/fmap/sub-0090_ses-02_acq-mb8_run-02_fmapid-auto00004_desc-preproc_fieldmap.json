@@ -1,0 +1,18 @@
+{
+  "AnatomicalReference": "sub-0090_ses-02_acq-mb8_run-02_fmapid-auto00004_desc-epi_fieldmap.nii.gz",
+  "AssociatedCoefficients": [
+    "sub-0090_ses-02_acq-mb8_run-02_fmapid-auto00004_desc-coeff_fieldmap.nii.gz"
+  ],
+  "B0FieldIdentifier": "auto_00004",
+  "IntendedFor": [
+    "ses-02/func/sub-0090_ses-02_task-alignvideo_acq-mb8_run-01_bold.nii.gz",
+    "ses-02/func/sub-0090_ses-02_task-alignvideo_acq-mb8_run-02_bold.nii.gz",
+    "ses-02/func/sub-0090_ses-02_task-alignvideo_acq-mb8_run-03_bold.nii.gz",
+    "ses-02/func/sub-0090_ses-02_task-alignvideo_acq-mb8_run-04_bold.nii.gz"
+  ],
+  "RawSources": [
+    "/scratch/08266/psadil/ds005256-fmriprep/sourcedata/raw/sub-0090/ses-02/fmap/sub-0090_ses-02_acq-mb8_dir-ap_run-02_epi.nii.gz",
+    "/scratch/08266/psadil/ds005256-fmriprep/sourcedata/raw/sub-0090/ses-02/fmap/sub-0090_ses-02_acq-mb8_dir-pa_run-02_epi.nii.gz"
+  ],
+  "Units": "Hz"
+}

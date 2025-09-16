@@ -1,0 +1,58 @@
+#!/bin/bash
+#SBATCH -J spacetop-deface
+#SBATCH -o logs/deface_%a.log
+#SBATCH -t 48:00:00
+#SBATCH -p corralextra
+#SBATCH -N 1 -n 1
+#SBATCH -A A2CPS
+
+
+deface() {
+	local i=$1
+	local license=${2:-$PWD/code/license}
+
+	local filename
+	filename=$(basename "${i%.nii.gz}")
+	filename="${filename%.mgz}"
+	local sub
+	sub=$(echo "${i}" | grep -oP "sub-\d{4}" | uniq)
+	local odir="${PWD}"/sourcedata/mideface/"${sub}"/"${filename}"
+
+	apptainer exec --env FS_LICENSE="${license}" --bind "${PWD}" code/containers/freesurfer_7_4_1.sif mideface --threads 16 --odir "${odir}" --i "${i}" --o "${i}"
+
+}
+export -f deface
+
+case $SLURM_ARRAY_TASK_ID in
+0)
+	for t1w in "${PWD}"/sub*/ses-01/anat/*preproc_T1w.nii.gz; do
+		if [[ $t1w == *space* ]]; then
+			continue
+		fi
+		deface "${t1w}"
+	done
+	;;
+
+1)
+	for t1w in "${PWD}"/sourcedata/freesurfer/sub*/mri/orig/*mgz; do
+		deface "${t1w}"
+	done
+	;;
+
+2)
+	for t1w in "${PWD}"/sourcedata/freesurfer/sub*/mri/rawavg.mgz; do
+		deface "${t1w}"
+	done
+	;;
+3)
+	for t1w in "${PWD}"/sourcedata/freesurfer/sub*/mri/orig*mgz; do
+		deface "${t1w}"
+	done
+	;;
+4)
+	for t1w in "${PWD}"/sourcedata/freesurfer/sub*/mri/T1*; do
+		deface "${t1w}"
+	done
+	;;
+esac
+

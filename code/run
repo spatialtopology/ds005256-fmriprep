@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH -J spacetop-fmriprep
 #SBATCH -o logs/%a.log
-#SBATCH -t 12:00:00
+#SBATCH -t 16:00:00
 #SBATCH -p normal
 #SBATCH -N 1 -n 1
 #SBATCH -A A2CPS
@@ -32,5 +32,7 @@ apptainer run \
     --skip-bids-validation \
     --ignore slicetiming \
     --dummy-scans 6 \
-    -w /tmp/work \
+    --cifti-output 91k \
+    --mem 100000 \
+    -w ${SCRATCH}/work \
     sourcedata/raw "${ROOT}" participant
