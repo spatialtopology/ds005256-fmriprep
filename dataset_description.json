@@ -1,8 +1,25 @@
 {
     "Acknowledgements": "Texas Advanced Computing Center (TACC) at The University of Texas at Austin.",
+    "Authors": [
+        "Heejung Jung",
+        "Maryam Amini",
+        "Bethany J. Hung",
+        "Eilis I. Murphy",
+        "Patrick Sadil",
+        "Yaroslav O. Halchenko",
+        "Bogdan Petre",
+        "Zizhuang Miao",
+        "Philip A. Kragel",
+        "Xiaochun Han",
+        "Mickela O. Heilicher",
+        "Michael Sun",
+        "Owen G. Collins",
+        "Martin A. Lindquist",
+        "Tor D. Wager"
+    ],
     "BIDSVersion": "1.10.0",
     "DatasetLinks": {
-        "raw": "/scratch/08266/psadil/ds005256-fmriprep/sourcedata/raw",
+        "raw": "typhon:/mnt/DATA/data/yoh/1076_spacetop",
         "templateflow": "https://github.com/templateflow/templateflow"
     },
     "DatasetType": "derivative",
@@ -19,11 +36,13 @@
             "Version": "25.1.4"
         }
     ],
+    "HowToAcknowledge": "Please cite: Jung, H., Amini, M., Hunt, B. J., Murphy, E. I., Sadil, P., Halchenko, Y. O., Miao, Z., Kragel, P.A., Han, X., Heilicher, M., Petre, B., Collins, O.G., Lindquist, M. A., & Wager, T. D. (2024). A massive multimodal fMRI dataset unifying naturalistic processes with a rich array of experimental tasks. bioRxiv. https://doi.org/10.1101/2024.06.21.599974",
     "Name": "fMRIPrep Derivatives for SpaceTop",
     "SourceDatasets": [
         {
             "DOI": "doi:10.18112/openneuro.ds005256.v1.1.0",
             "URL": "https://doi.org/doi:10.18112/openneuro.ds005256.v1.1.0"
         }
-    ]
+    ],
+    "License": "CC0"
 }
