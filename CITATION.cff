@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+message: "Please cite: Jung, H., Amini, M., Hunt, B. J., Murphy, E. I., Sadil, P., Halchenko, Y. O., Miao, Z., Kragel, P.A., Han, X., Heilicher, M., Petre, B., Collins, O.G., Lindquist, M. A., & Wager, T. D. (2024). A massive multimodal fMRI dataset unifying naturalistic processes with a rich array of experimental tasks. bioRxiv. https://doi.org/10.1101/2024.06.21.599974"
+authors:
+  - family-names: Jung
+    given-names: Heejung
+    orcid: https://orcid.org/0000-0001-5839-1655
+  - family-names: "Amini"
+    given-names: "Maryam"
+  - family-names: "Hung"
+    given-names: "Bethany J."
+  - family-names: "Murphy"
+    given-names: "Eilis I."
+    orcid: https://orcid.org/0000-0002-7351-9431
+  - family-names: Sadil
+    given-names: Patrick
+    orcid: https://orcid.org/1234-5678-9101-1121
+  - family-names: "Halchenko"
+    given-names: "Yaroslav O."
+    orcid: https://orcid.org/0000-0003-3456-2493
+  - family-names: "Petre"
+    given-names: "Bogdan"
+    orcid: https://orcid.org/0000-0002-8437-168X
+  - family-names: "Miao"
+    given-names: "Zizhuang"
+    orcid: https://orcid.org/0009-0004-5224-8435
+  - family-names: "Kragel"
+    given-names: "Philip A."
+    orcid: https://orcid.org/0000-0001-9463-6381
+  - family-names: "Han"
+    given-names: "Xiaochun"
+  - family-names: "Heilicher"
+    given-names: "Mickela O."
+  - family-names: "Sun"
+    given-names: "Michael"
+  - family-names: "Collins"
+    given-names: "Owen G."
+  - family-names: "Lindquist"
+    given-names: "Martin A."
+    orcid: https://orcid.org/0000-0003-2289-0828
+  - family-names: "Wager"
+    given-names: "Tor D."
+    orcid: https://orcid.org/0000-0002-1936-5574
+title: "MRIQC Derivatives for SpaceTop"
+license: CC0-1.0
+version: 1.0.0

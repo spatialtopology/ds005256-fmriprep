@@ -1,0 +1,29 @@
+{
+    "Acknowledgements": "Texas Advanced Computing Center (TACC) at The University of Texas at Austin.",
+    "BIDSVersion": "1.10.0",
+    "DatasetLinks": {
+        "raw": "/scratch/08266/psadil/ds005256-fmriprep/sourcedata/raw",
+        "templateflow": "https://github.com/templateflow/templateflow"
+    },
+    "DatasetType": "derivative",
+    "EthicsApprovals": [
+        "The institutional review board of Dartmouth College approved the study (CPHS STUDY00031937: Spatial Topology 31937), and all participants provided written consent."
+    ],
+    "Funding": [
+        "NIBIB:R01EB026549-03"
+    ],
+    "GeneratedBy": [
+        {
+            "CodeURL": "https://github.com/nipreps/fmriprep/archive/25.1.4.tar.gz",
+            "Name": "fMRIPrep",
+            "Version": "25.1.4"
+        }
+    ],
+    "Name": "fMRIPrep Derivatives for SpaceTop",
+    "SourceDatasets": [
+        {
+            "DOI": "doi:10.18112/openneuro.ds005256.v1.1.0",
+            "URL": "https://doi.org/doi:10.18112/openneuro.ds005256.v1.1.0"
+        }
+    ]
+}
