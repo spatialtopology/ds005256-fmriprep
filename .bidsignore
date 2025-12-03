@@ -1,9 +1,12 @@
 *.html
-logs/
-figures/
+log
+figures
 *_xfm.*
 *.surf.gii
-*_boldref.nii.gz
+*shape.gii
+*_boldref.*
 *_bold.func.gii
 *_mixing.tsv
-*_timeseries.tsv
+*_timeseries.*
+*fmapid*
+*space-*
