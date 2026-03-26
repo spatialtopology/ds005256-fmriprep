@@ -6,7 +6,7 @@ This is a BIDS Derivatives dataset resulting from running fMRIPrep on [ds005256]
 
 fMRIPrep documentation can be found on <https://fmriprep.readthedocs.io/>.
 
-A containerized version of MRIQC is stored in code/containers/fmriprep_25_1_4.sif. This container was built using
+A containerized version of fMRIPrep is stored in code/containers/fmriprep_25_1_4.sif. This container was built using
 
 ```shell
 apptainer build code/containers/fmriprep_25_1_4.sif docker://nipreps/fmriprep:25.1.4
@@ -38,4 +38,4 @@ apptainer version 1.2.2-2.el8
 
 ### Caveats
 
-At the time of writing, most MRIQC products are not covered by BIDS, and so most of this dataset is covered by a [`.bidsignore`](.bidsignore).
+At the time of writing, most fMRIPrep products are not covered by BIDS, and so most of this dataset is covered by a [`.bidsignore`](.bidsignore).
