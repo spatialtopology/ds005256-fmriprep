@@ -1,0 +1,15 @@
+{
+  "DelayTime": 0.08250000000000002,
+  "RepetitionTime": 0.46,
+  "SkullStripped": false,
+  "SliceTimingCorrected": false,
+  "Sources": [
+    "bids:raw:sub-0105/ses-02/func/sub-0105_ses-02_task-alignvideo_acq-mb8_run-04_bold.nii.gz",
+    "bids::sub-0105/ses-02/func/sub-0105_ses-02_task-alignvideo_acq-mb8_run-04_from-orig_to-boldref_mode-image_desc-hmc_xfm.txt",
+    "bids::sub-0105/ses-02/func/sub-0105_ses-02_task-alignvideo_acq-mb8_run-04_from-boldref_to-auto00004_mode-image_xfm.txt",
+    "bids::sub-0105/ses-02/func/sub-0105_ses-02_task-alignvideo_acq-mb8_run-04_from-boldref_to-T1w_mode-image_desc-coreg_xfm.txt",
+    "bids::sub-0105/ses-01/anat/sub-0105_ses-01_acq-MPRAGEXp3X08mm_from-T1w_to-MNI152NLin2009cAsym_mode-image_xfm.h5",
+    "bids:templateflow:tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-01_T1w.nii.gz"
+  ],
+  "TaskName": "alignvideo"
+}
