@@ -1,0 +1,22 @@
+{
+  "AnatomicalReference": "sub-0055_ses-04_acq-mb8_run-01_fmapid-auto00007_desc-epi_fieldmap.nii.gz",
+  "AssociatedCoefficients": [
+    "sub-0055_ses-04_acq-mb8_run-01_fmapid-auto00007_desc-coeff_fieldmap.nii.gz"
+  ],
+  "B0FieldIdentifier": "auto_00007",
+  "IntendedFor": [
+    "ses-04/func/sub-0055_ses-04_task-fractional_acq-mb8_run-01_bold.nii.gz",
+    "ses-04/func/sub-0055_ses-04_task-fractional_acq-mb8_run-02_bold.nii.gz",
+    "ses-04/func/sub-0055_ses-04_task-social_acq-mb8_run-01_bold.nii.gz",
+    "ses-04/func/sub-0055_ses-04_task-social_acq-mb8_run-02_bold.nii.gz",
+    "ses-04/func/sub-0055_ses-04_task-social_acq-mb8_run-03_bold.nii.gz",
+    "ses-04/func/sub-0055_ses-04_task-social_acq-mb8_run-04_bold.nii.gz",
+    "ses-04/func/sub-0055_ses-04_task-social_acq-mb8_run-05_bold.nii.gz",
+    "ses-04/func/sub-0055_ses-04_task-social_acq-mb8_run-06_bold.nii.gz"
+  ],
+  "RawSources": [
+    "/scratch/08266/psadil/ds005256-fmriprep/sourcedata/raw/sub-0055/ses-04/fmap/sub-0055_ses-04_acq-mb8_dir-ap_run-01_epi.nii.gz",
+    "/scratch/08266/psadil/ds005256-fmriprep/sourcedata/raw/sub-0055/ses-04/fmap/sub-0055_ses-04_acq-mb8_dir-pa_run-01_epi.nii.gz"
+  ],
+  "Units": "Hz"
+}
